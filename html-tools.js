@@ -1,5 +1,6 @@
 var HTML = require("meteor-htmljs");
 var HTMLTools;
+var TEMPLATE_TAG_POSITION;
 
 HTMLTools = {};
 HTMLTools.Parse = {};
