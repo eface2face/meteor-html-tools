@@ -1,6 +1,7 @@
-var HTML = require("meteor-htmljs");
-var HTMLTools;
-var TEMPLATE_TAG_POSITION;
+module.exports = function(Meteor) {
+  var HTML = Meteor.HTML;
+  var HTMLTools;
+  var TEMPLATE_TAG_POSITION;
 
 HTMLTools = {};
 HTMLTools.Parse = {};
@@ -3445,4 +3446,5 @@ var parseAttrs = function (attrs) {
 
   return result;
 };
-module.exports = HTMLTools;
+  Meteor.HTMLTools = HTMLTools;
+};
