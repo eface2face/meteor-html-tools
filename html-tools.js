@@ -1,4 +1,5 @@
 var HTML = require("meteor-htmljs");
+var HTMLTools;
 
 HTMLTools = {};
 HTMLTools.Parse = {};
