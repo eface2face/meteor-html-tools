@@ -3262,7 +3262,7 @@ getContent = HTMLTools.Parse.getContent = function (scanner, shouldStopFunc) {
               attrs.value = textareaValue;
             }
           }
-        } else if (token.n === 'script') {
+        } else if (token.n === 'script' || token.n === 'style') {
           content = getRawText(scanner, token.n, shouldStopFunc);
         } else {
           content = getContent(scanner, shouldStopFunc);
